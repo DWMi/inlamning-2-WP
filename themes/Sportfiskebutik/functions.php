@@ -8,7 +8,7 @@ add_theme_support('post-thumbnails');
 function ta_bort_sidebar(){
 
 
-        remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10);
+    remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10);
 
 
 }
@@ -24,5 +24,5 @@ function lagg_till(){
 }
 add_action('storefront_sidebar', 'lagg_till');
 
-remove_filter('the_content', 'wpautop');
+
 ?>
